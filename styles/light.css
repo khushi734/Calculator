@@ -16,6 +16,7 @@
   align-items: center;
   background-color: rgb(7, 210, 199);
   transition: 0.8s all;
+  -webkit-tap-highlight-color: transparent;
 }
 
 h1 {

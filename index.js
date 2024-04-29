@@ -27,8 +27,7 @@ function changeTheme() {
 function calculate (value) {
   
   if(value.includes('²')){
-    value = value.replace('²', "");
-    value = value + '*' + value
+    value = value.replace(/\((.*)\)\²/g, "($1)*($1)")
   }
   
   const calculatedValue = eval(value || null);
